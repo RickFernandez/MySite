@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 66em;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(68deg, #111111 10%, #0d0098, #4e277c) no-repeat;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 5vw;
+}
+
+.logo {
+    font-family: 'Righteous', cursive;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+.cabecalho-menu-item:hover {
+    transform: scale(1.1);
+    translate: 0.5s;
+    border-bottom: 3px solid #FFF2E7;
+    background-color: #fff2e72f;
+}
+
+.conteudo {
+    flex: auto;
+    margin-bottom: 48px;
+    border-top: 0.4px solid #FFF2E7;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito-p1 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 70px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFF2E7;
+    width: 530px;
+    border-right: 4px #FFF2E7 solid;
+    animation: blinkType 550ms steps(55) infinite normal, typeWriting 4s steps(25) 1s normal;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+@keyframes blinkType {
+    from {
+        border-right: 4px #FFF2E7 solid;
+    }
+
+    to {
+        border-right: transparent;
+    }
+}
+
+@keyframes typeWriting {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 530px;
+    }
+}
+
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #ECD6C4;
+}
+
+.conteudo-principal-escrito-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ECD6C4;
+}
+
+@keyframes blinkEye {}
+
+.conteudo-principal-escrito-botao {
+    background-color: #FFF2E7;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325;
+}
+
+.conteudo-principal-escrito-botao:hover {
+    transform: scale(1.1);
+    transition: all 0.7s;
+    background-color: #FFF2E7;
+    color: #000000;
+}
+
+.conteudo-principal-escrito-imagem {
+    height: 430px;
+    border-radius: 150px;
+    margin-top: 70px;
+    box-shadow: 1px 1px 10px 5px #292649;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 40px;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 24px;
+    color: #FFF2E7;
+    margin-bottom: 16px;
+}
+
+.conteudo-secundario-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+
+.rodape {
+    flex-shrink: 0;
+    padding: 15px 0px 5px;
+    border-top: 0.4px solid #FFF2E7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.rodape-item {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ECD6C4;
+}
+
+.rodape-linkedin,
+.rodape-gitHub,
+.rodape-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-linkedin,
+.fa-github,
+.fa-square-phone {
+    width: 20px;
+    height: 20px;
+    color: #ECD6C4;
+}
+
+.direitos {
+    margin: 0 auto;
+    width: 284px;
+    border-top: 0.2px solid #fff2e744;
+    padding: 5px 0px 5px;
+}
