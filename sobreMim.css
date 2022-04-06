@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(68deg, #111111 10%, #0d0098, #4e277c) no-repeat;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px 5vw;
+}
+
+.logo {
+    font-family: 'Righteous', cursive;
+    color: #ffe0e0;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: 'Sarala', sans-serif;
+    color: #ffe0e0;
+    font-weight: 400;
+    font-size: 18px;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+}
+
+.cabecalho-menu-item:hover {
+    transform: scale(1.1);
+    translate: 0.5s;
+    border-bottom: 3px solid #ffe0e0;
+    background-color: #ffe0e02f;
+}
+
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 0.4px solid #ffe0e0;
+}
+
+.principal-titulo {
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 64px;
+    color: #ffe0e0;
+    margin-top: 40px;
+    border-bottom: 4px solid #ffe0e0;
+}
+
+.principal-paragrafo {
+    font-family: 'Sarala', sans-serif;
+    margin: 23px 10px 23px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-align: center;
+}
+
+.rodape {
+    flex-shrink: 0;
+    padding: 15px 0px 5px;
+    border-top: 0.4px solid #ffe0e0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.rodape-item {
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffe0e0;
+}
+
+.rodape-linkedin,
+.rodape-gitHub,
+.rodape-contato {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa-linkedin,
+.fa-github,
+.fa-square-phone {
+    width: 20px;
+    height: 20px;
+    color: #ffe0e0;
+}
+
+.direitos {
+    margin: 0 auto;
+    width: 284px;
+    border-top: 0.2px solid #ffe0e044;
+    padding: 5px 0px 5px;
+}
