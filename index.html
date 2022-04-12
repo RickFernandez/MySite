@@ -5,54 +5,100 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Um bot que irá moderar e deixara a sua comunidade mais segura">
-    <link rel="stylesheet" href="./index.css">
     <title>Rick Fernandez</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/sobreMim.css">
+    <link rel="stylesheet" href="./css/projetos.css">
 </head>
 
 <body>
     <header class="cabecalho">
         <h1 class="logo">Rick Fernandez</h1>
         <nav class="cabecalho-menu">
-            <a href="./index.html" class="cabecalho-menu-item">Home</a>
-            <a href="./sobreMim.html" class="cabecalho-menu-item">Sobre mim</a>
-            <a href="./projetos.html" class="cabecalho-menu-item">Projetos</a>
-            <a href="./contato.html" class="cabecalho-menu-item">Contato</a>
+            <a href="#" class="cabecalho-menu-item">Home</a>
+            <a href="#" class="cabecalho-menu-item">Projetos</a>
+            <a href="#sobreMim" class="cabecalho-menu-item">Sobre mim</a>
+            <a href="#" class="cabecalho-menu-item">Contato</a>
         </nav>
 
     </header>
 
     <main class="conteudo">
-        <section class="conteudo-principal">
-            <div class="conteudo-principal-escrito-p1">
-                <H1 class="conteudo-principal-escrito-titulo">Seja bem-vindo!...</H1>
+        <div class="container">
+            <section class="conteudo-principal">
+                <div class="conteudo-principal-escrito-p1">
+                    <H1 class="conteudo-principal-escrito-titulo">Seja bem-vindo!...</H1>
 
-                <div class="conteudo-principal-escrito-p2">
-                    <h2 class="conteudo-principal-escrito-subtitulo">Olá, meu nome é Henrique, mas pode me chamar de
-                        Rick!</h2>
+                    <div class="conteudo-principal-escrito-p2">
+                        <p class="conteudo-principal-escrito-paragrafo">Olá, meu nome é</p>
+                        <h2 class="conteudo-principal-escrito-subtitulo">Henrique Fernandez</h2>
 
-                    <p class="conteudo-principal-escrito-paragrafo">
-                        Este é o meu site, onde eu conto um pouco sobre mim. Espero que aproveite!
-                        <br>
-                        É um prazer te conhecer =)
-                    </p>
+                        <p class="conteudo-principal-escrito-paragrafo">
+                            É um prazer te conhecer =)
+                        </p>
+                    </div>
+
+                    <a href="#sobreMim">
+                        <button class="conteudo-principal-botao">Contato</button>
+                    </a>
                 </div>
 
-                <button class="conteudo-principal-escrito-botao">Sobre mim</button>
-            </div>
+                <img class="conteudo-principal-escrito-imagem" src="../img/snap-cruzado.jpg" alt="">
+            </section>
+        </div>
 
-            <img class="conteudo-principal-escrito-imagem" src="../img/snap-cruzado.jpg" alt="">
+        <section class="projeto" id="projeto">
+            <div class="projeto-container">
+                <h1 class="projeto-conteudo-titulo">Projetos</h1>
+                <p class="projeto-conteudo-paragrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias maiores similique saepe delectus facilis possimus, tenetur adipisci magnam perspiciatis?</p>
+                <div class="projeto-conteudo">
+                    <div class="projeto-conteudo-lista">
+                        <h2 class="projeto-conteudo-subtitulo">Projeto Traveller</h2>
+                        <img src="./img/projeto-traveller.png" alt="Site projeto Traveller - página de hospedagem de hotéis" class="projeto-image">
+                        <p class="projeto-conteudo-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.</p>
+                        <a href="https://projeto-traveller--hospedagem.herokuapp.com/" target="blank" class="projeto-conteudo-btn"><buttom>Live</buttom></a>
+                            <buttom class="projeto-conteudo-btn"><a href="https://github.com/RickFernandez/Projeto_Traveller-Hospedagem.git" >Repo in GitHub</a></buttom>
+                    </div>
+                    <div class="projeto-conteudo-lista">
+                        <h2 class="projeto-conteudo-subtitulo">Alura Geek</h2>
+                        <img src="./img/projeto-alura_geek.png" alt="Projeto site de e-commerce da Alura Geek" class="projeto-image">
+                        <p class="projeto-conteudo-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.</p>
+                            <buttom class="projeto-conteudo-btn"><a href="https://alura-geek-site.herokuapp.com/" >Live</a></buttom>
+                            <buttom class="projeto-conteudo-btn"><a href="https://github.com/RickFernandez/Alura_Geek.git" >Repo in GitHub</a></buttom>
+                    </div>
+                    <div class="projeto-conteudo-lista">
+                        <h2 class="projeto-conteudo-subtitulo">Calcula IMC</h2>
+                        <img src="./img/projeto-calcula_imc.png" alt="Projeto calculadora de IMC (Índice de Massa Muscular)" class="projeto-image" >
+                        <p class="projeto-conteudo-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.</p>
+                            <buttom class="projeto-conteudo-btn"><a href="https://calcula-imc.herokuapp.com/" >Live</a></buttom>
+                            <buttom class="projeto-conteudo-btn"><a href="https://github.com/RickFernandez/Calculadora-de-IMC.git" >Repo in GitHub</a></buttom>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section class="conteudo-secundario">
-            <h3 class="conteudo-secundario-titulo">Quem sou eu?</h3>
+        <section class="sobreMim" id="sobreMim">           
+            <div class="sobreMim-container">
+                <h1 class="sobreMim-titulo">Sobre mim</h1>
 
-            <p class="conteudo-secundario-paragrafo">1. Me chamo Henrique Fernandez Soares</p>
-
-            <p class="conteudo-secundario-paragrafo">2. Tenho 18 anos</p>
-
-            <p class="conteudo-secundario-paragrafo">3. Gosto de games, andar de skate, escutar músicas, desenhar,
-                etc... Para saber mais, clique no botão acima!</p>
+                <p class="sobreMim-paragrafo">
+                    Oba, bão? Espero que sim! 😁
+                    <br><br>
+                    Prazer em te conhecer, meu nome é Henrique, mas pode me chamar de Rick 👨🏼‍💻
+                    <br><br>
+                    Tenho 18 anos e atualmente estou cursando Sistemas para Internet na FIAP. Além disso, tenho formação técnica em Automação Industrial.
+                    <br><br>
+                    Sou uma pessoa que durante os 11 anos de escola, nunca foi muito de estudar, e não fazia ideia do que queria da vida. Porém, no meu último ano da escola, em uma das matérias do curso técnico o professor começou a passar programação para nós, na linguagem C. Naquele momento eu já comecei a achar um assunto interessante, mas não sei muita bola. Após um tempo, depois de eu já ter me formado, lembrei daquela matéria e fui pesquisar um pouco mais sobre o assunto, e foi aí que a ficha caiu!
+                    <br><br>
+                    Comecei a ver sobre Desenvolvimento Web, quando mexi com HTML & CSS foi quando eu me apaixonei de vez pela área, foi o momento onde eu decidi que era aquilo que eu queria para a minha vida.
+                    <br><br>
+                    Fui pesquisando mais sobre o assunto, e fazendo apenas algumas Landing Pages com essas linguagens eu já me achava O programador (até descobrir que essas linguagens não eram consideradas linguagens de programação 🥲). E foi aí que eu comprei o curso da Alura, onde comecei a me aprofundar mais ainda sobre o assunto e comecei a estudar sobre lógica da programação e ver um pouco sobre JavaScript. Lembro até hoje que o meu primeiro "Hello Word" foi uma das minhas maiores conquistas, foi uma das coisas que mais me deixou feliz na vida, pois eu sabia que ali eu estava dando início ao meu sonho.
+                    Como eu não era uma pessoa que gostava muito de estudar, nunca pensei em fazer faculdade (achava uma perca de tempo ficas estudando 4/5 anos para só depois começar a entrar na sua área), ainda mais depois de descobrir que o que eu queria para a minha vida era mexer com tecnologia, e neste mercado, a faculdade não é tão importante assim. Até que um dia eu encontrei uma conhecida que estava fazendo faculdade na FIAP, e ela me falou sobre os cursos tecnólogos que eles tinham na instituição. Achei interessante e quando cheguei em casa fui pesquisar um pouco mais sobre. Enquanto estava pesquisando eu vi que o curso tinha duração de apenas 2 anos, e não era uma coisa tão teórica igual os cursos bacharelados. Devido ao pouco tempo, as matérias eram mais focadas em assustos do mercado de trabalho. E foi aí, depois de aproximadamente uns 3 meses estudando apenas pela plataforma da Alura, que eu decidi entrar na FIAP.
+                    <br><br>
+                    E foi aí que eu tomei uma das melhores decisões da minha vida. É possível sim aprender programação do zero sem nenhuma faculdade, fazendo apenas cursos por fora ou até mesmo com conteúdos gratuitos pela internet, mas é completamente diferente quando se tem pessoas te explicando as coisas com mais detalhes, te mostrando um caminho pra seguir, quais assuntos estudar antes e tals...
+                </p>
+            </div>
         </section>
     </main>
 

@@ -9,15 +9,15 @@
 
 html,
 body {
-    height: 66em;
     margin: 0px;
     padding: 0px;
 }
 
 body {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(68deg, #111111 10%, #0d0098, #4e277c) no-repeat;
+    background-color: #121212;
 }
 
 .cabecalho {
@@ -30,9 +30,10 @@ body {
 
 .logo {
     font-family: 'Righteous', cursive;
-    color: #FFF2E7;
+    color: #2f1ee8;
+    text-shadow: 1px 1px 10px #5951b3b4;
     font-weight: 400;
-    font-size: 35px;
+    font-size: 2.2rem;
 }
 
 .cabecalho-menu {
@@ -42,24 +43,28 @@ body {
 
 .cabecalho-menu-item {
     font-family: 'Sarala', sans-serif;
-    color: #FFF2E7;
+    color: #FFF;
     font-weight: 400;
-    font-size: 18px;
-    border-radius: 5px;
+    font-size: 1.4rem;
     transition-duration: 0.3s;
 }
 
 .cabecalho-menu-item:hover {
     transform: scale(1.1);
     translate: 0.5s;
-    border-bottom: 3px solid #FFF2E7;
-    background-color: #fff2e72f;
+    color: #6152ff;
+    text-shadow: 1px 1px 10px #6963b2b4;
+    border-bottom: 1.5px solid #6152ff;
 }
 
 .conteudo {
     flex: auto;
-    margin-bottom: 48px;
-    border-top: 0.4px solid #FFF2E7;
+    margin-bottom: 4%;
+    border-top: 0.4px solid #FFF;
+}
+
+.container {
+    height: 87vh;
 }
 
 .conteudo-principal {
@@ -72,17 +77,16 @@ body {
 .conteudo-principal-escrito-p1 {
     display: flex;
     flex-direction: column;
-    gap: 32px;
-    margin-top: 70px;
+    margin-top: 3%;
 }
 
 .conteudo-principal-escrito-titulo {
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 64px;
-    color: #FFF2E7;
+    font-size: 4rem;
+    color: #FFF;
     width: 530px;
-    border-right: 4px #FFF2E7 solid;
+    border-right: 4px #FFF solid;
     animation: blinkType 550ms steps(55) infinite normal, typeWriting 4s steps(25) 1s normal;
     overflow: hidden;
     white-space: nowrap;
@@ -90,7 +94,7 @@ body {
 
 @keyframes blinkType {
     from {
-        border-right: 4px #FFF2E7 solid;
+        border-right: 4px #FFF solid;
     }
 
     to {
@@ -108,49 +112,53 @@ body {
     }
 }
 
+.conteudo-principal-escrito-p2 {
+    margin: 3% 0 3%;
+    line-height: 2.5rem;
+}
+
 .conteudo-principal-escrito-subtitulo {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.5rem;
     font-weight: bolder;
-    color: #ECD6C4;
+    color: #FFF;
+    color: #2f1ee8;
 }
 
 .conteudo-principal-escrito-paragrafo {
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 27px;
     font-weight: bold;
-    color: #ECD6C4;
+    color: #FFF;
 }
 
-@keyframes blinkEye {}
-
-.conteudo-principal-escrito-botao {
-    background-color: #FFF2E7;
-    width: 180px;
-    height: 60px;
+.conteudo-principal-botao {
+    background-color: rgba(255, 255, 255, 0.912);
+    width: 200px;
+    height: 50px;
     border: none;
-    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 20px;
+    border-radius: 15px;
     font-family: 'Sarala', sans-serif;
     font-weight: 400;
-    font-size: 24px;
-    color: #2F2325;
+    font-size: 1.5em;
+    color: #2f1ee8;
 }
 
-.conteudo-principal-escrito-botao:hover {
+.conteudo-principal-botao:hover {
     transform: scale(1.1);
-    transition: all 0.7s;
-    background-color: #FFF2E7;
-    color: #000000;
+    transition: all 0.8s;
+    background-color: #613593dd;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 
 .conteudo-principal-escrito-imagem {
-    height: 430px;
-    border-radius: 150px;
+    height: 70vh;
+    border-radius: 45vw;
     margin-top: 70px;
-    box-shadow: 1px 1px 10px 5px #292649;
+    box-shadow: 3px 3px 30px 10px #5951b3b4;
 }
 
 .conteudo-secundario {
@@ -162,12 +170,12 @@ body {
 }
 
 .conteudo-secundario-titulo {
-    border-top: 0.4px solid #FFF2E7;
+    border-top: 0.4px solid #FFF;
     padding-top: 40px;
     font-family: 'Righteous', cursive;
     font-weight: 400;
     font-size: 24px;
-    color: #FFF2E7;
+    color: #FFF;
     margin-bottom: 16px;
 }
 
@@ -181,7 +189,7 @@ body {
 .rodape {
     flex-shrink: 0;
     padding: 15px 0px 5px;
-    border-top: 0.4px solid #FFF2E7;
+    border-top: 0.4px solid #FFF;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -214,6 +222,6 @@ body {
 .direitos {
     margin: 0 auto;
     width: 284px;
-    border-top: 0.2px solid #fff2e744;
+    border-top: 0.2px solid #FFF;
     padding: 5px 0px 5px;
 }
