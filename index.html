@@ -10,16 +10,19 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/sobreMim.css">
     <link rel="stylesheet" href="./css/projetos.css">
+    <link rel="stylesheet" href="./css/contato.css">
 </head>
 
 <body>
-    <header class="cabecalho">
-        <h1 class="logo">Rick Fernandez</h1>
+    <header class="cabecalho" id="home">
+        <a href="#home">
+            <h1 class="logo">Rick Fernandez</h1>
+        </a>
         <nav class="cabecalho-menu">
-            <a href="#" class="cabecalho-menu-item">Home</a>
-            <a href="#" class="cabecalho-menu-item">Projetos</a>
+            <a href="#home" class="cabecalho-menu-item">Home</a>
+            <a href="#projeto" class="cabecalho-menu-item">Projetos</a>
             <a href="#sobreMim" class="cabecalho-menu-item">Sobre mim</a>
-            <a href="#" class="cabecalho-menu-item">Contato</a>
+            <a href="#contato" class="cabecalho-menu-item">Contato</a>
         </nav>
 
     </header>
@@ -39,7 +42,7 @@
                         </p>
                     </div>
 
-                    <a href="#sobreMim">
+                    <a href="#contato">
                         <button class="conteudo-principal-botao">Contato</button>
                     </a>
                 </div>
@@ -57,22 +60,34 @@
                         <h2 class="projeto-conteudo-subtitulo">Projeto Traveller</h2>
                         <img src="./img/projeto-traveller.png" alt="Site projeto Traveller - página de hospedagem de hotéis" class="projeto-image">
                         <p class="projeto-conteudo-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.</p>
-                        <a href="https://projeto-traveller--hospedagem.herokuapp.com/" target="blank" class="projeto-conteudo-btn"><buttom>Live</buttom></a>
-                            <buttom class="projeto-conteudo-btn"><a href="https://github.com/RickFernandez/Projeto_Traveller-Hospedagem.git" >Repo in GitHub</a></buttom>
+                        <a href="https://projeto-traveller--hospedagem.herokuapp.com/" target="blank" class="projeto-conteudo-btn">
+                            <buttom>Live</buttom>
+                        </a>
+                        <a href="https://github.com/RickFernandez/Projeto_Traveller-Hospedagem.git" target="blank" class="projeto-conteudo-btn">
+                            <buttom>Repo in GitHub</buttom>
+                        </a> 
                     </div>
                     <div class="projeto-conteudo-lista">
                         <h2 class="projeto-conteudo-subtitulo">Alura Geek</h2>
                         <img src="./img/projeto-alura_geek.png" alt="Projeto site de e-commerce da Alura Geek" class="projeto-image">
                         <p class="projeto-conteudo-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.</p>
-                            <buttom class="projeto-conteudo-btn"><a href="https://alura-geek-site.herokuapp.com/" >Live</a></buttom>
-                            <buttom class="projeto-conteudo-btn"><a href="https://github.com/RickFernandez/Alura_Geek.git" >Repo in GitHub</a></buttom>
+                        <a href="https://alura-geek-site.herokuapp.com//" target="blank" class="projeto-conteudo-btn">
+                            <buttom>Live</buttom>
+                        </a>
+                        <a href="https://github.com/RickFernandez/Alura_Geek" target="blank" class="projeto-conteudo-btn">
+                            <buttom>Repo in GitHub</buttom>
+                        </a>
                     </div>
                     <div class="projeto-conteudo-lista">
                         <h2 class="projeto-conteudo-subtitulo">Calcula IMC</h2>
                         <img src="./img/projeto-calcula_imc.png" alt="Projeto calculadora de IMC (Índice de Massa Muscular)" class="projeto-image" >
                         <p class="projeto-conteudo-texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid, quos.</p>
-                            <buttom class="projeto-conteudo-btn"><a href="https://calcula-imc.herokuapp.com/" >Live</a></buttom>
-                            <buttom class="projeto-conteudo-btn"><a href="https://github.com/RickFernandez/Calculadora-de-IMC.git" >Repo in GitHub</a></buttom>
+                        <a href="https://calcula-imc.herokuapp.com/" target="blank" class="projeto-conteudo-btn">
+                            <buttom>Live</buttom>
+                        </a>
+                        <a href="https://github.com/RickFernandez/Calculadora-de-IMC.git" target="blank" class="projeto-conteudo-btn">
+                            <buttom>Repo in GitHub</buttom>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -100,28 +115,59 @@
                 </p>
             </div>
         </section>
+
+        <section class="contato" id="contato">
+            <div class="contato-titulo">
+                <h1>Contato</h1>
+            </div>
+
+            <div class="contato-conteudo-principal">
+                <img src="../img/snap-piscada.jpg" alt="" class="contato-image">
+
+                <div class="contato-conteudo1">
+                    <form class="form">
+                        <div class="form-contato">
+                            <label for="text" class="form-contato-label">Nome</label>
+                            <input type="text" class="form-contato-nome" placeholder="Nome (obrigatório)" required>
+                        </div>
+
+                        <div class="form-contato">
+                            <label for="text" class="form-contato-label">E-mail</label>
+                            <input type="email" class="form-contato-email" placeholder="seu@email.com (obrigatório)" required>
+                        </div>
+
+                        <div class="form-contato">
+                            <label for="text" class="form-contato-label">Deixe sua mensagem</label>
+                            <textarea placeholder="Sua mensagem (obrigatório)" class="form-contato-mensagem" required></textarea>
+                        </div>
+
+                        <button class="form-botao">Enviar</button>
+                    </form>
+
+                    <div class="contato-conteudo2">
+                        <nav class="contato-conteudo-lista">
+                            <a href="https://github.com/RickFernandez" class="contato-lista-link" target="blank">
+                                <i class="fa-brands fa-github"></i>
+                                <p class="contato-link-texto">GitHub</p>
+                            </a>
+                            <a href="https://www.linkedin.com/in/henrique-fernandez-bb3751212/" class="contato-lista-link" target="blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                                <p class="contato-link-texto">Linkedin</p>
+                            </a>
+                            <a href="https://www.instagram.com/rick_fenandez/" class="contato-lista-link" target="blank">
+                                <i class="fa-brands fa-instagram"></i>
+                                <p class="contato-link-texto">Instagram</p>
+                            </a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <nav class="rodape">
-            <a href="https://www.linkedin.com/in/henrique-fernandez-bb3751212/" class="rodape-linkedin" target="_blank">
-                <i class="fa-brands fa-linkedin"></i>
-                <p class="rodape-item">Linedin</p>
-            </a>
-
-            <a href="https://github.com/RickFernandez" target="_blank" class="rodape-gitHub">
-                <i class="fa-brands fa-github"></i>
-                <p class="rodape-item">GitHub</p>
-            </a>
-
-            <a href="./contato.html" class="rodape-contato">
-                <i class="fa-solid fa-square-phone"></i>
-                <p class="rodape-item">Contato</p>
-            </a>
-        </nav>
-
+    <footer class="rodape">
         <div class="direitos rodape-item">
-            <p>Todos os direitos reservados © 2022</p>
+            <p>Site criado por Henrique Fernandez | Todos os direitos reservados © 2022</p>
         </div>
     </footer>
 </body>

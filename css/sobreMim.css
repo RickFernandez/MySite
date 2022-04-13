@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala:wght@400;700&display=swap');
 
 .sobreMim {
-    height: 100vh;
+    background-color: #121212;
 }
 
 .sobreMim-container {
@@ -9,7 +9,6 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #1e1e1e;
 }
 
 .sobreMim-titulo {
@@ -17,7 +16,7 @@
     font-weight: 400;
     font-size: 4rem;
     color: #2f1ee8;
-    margin-top: 4%;
+    margin-top: 2%;
     border-bottom: 4px solid #2f1ee8;
 }
 

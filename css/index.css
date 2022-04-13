@@ -187,41 +187,14 @@ body {
 }
 
 .rodape {
-    flex-shrink: 0;
-    padding: 15px 0px 5px;
-    border-top: 0.4px solid #FFF;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
-.rodape-item {
-    font-family: 'Sarala', sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    font-weight: bold;
-    color: #ECD6C4;
-}
-
-.rodape-linkedin,
-.rodape-gitHub,
-.rodape-contato {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.fa-linkedin,
-.fa-github,
-.fa-square-phone {
-    width: 20px;
-    height: 20px;
-    color: #ECD6C4;
+    height: 10vh;
+    margin: 0 auto;
 }
 
 .direitos {
-    margin: 0 auto;
-    width: 284px;
-    border-top: 0.2px solid #FFF;
-    padding: 5px 0px 5px;
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #FFF;
 }
